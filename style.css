@@ -1,0 +1,373 @@
+body {
+    position: relative;
+    background-color: #fff5f5;
+    width: 1440px;
+    height: 1024px;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+header {
+    position: relative;
+    width: 400px;
+    height: 100px;
+
+}
+
+#logo {
+    margin-left: 84px;
+    margin-top: 40px;
+}
+
+main {
+    position: relative;
+    width: 900px;
+    height: 600px;
+}
+
+#texto-original {
+    position: absolute;
+    width: 680px;
+    height: 288px;
+    line-height: 150%;
+    margin-left: 240px;
+    margin-top: 100px;
+    background: none;
+    border-color: transparent;
+    border-style: none;
+    color: #0A3871;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+#texto-original::placeholder {
+    color: #0A3871;
+}
+
+#texto-original:focus {
+    border: 0;
+    border-color: #dfe;
+    outline: none;
+}
+
+aside {
+    position: absolute;
+    width: 400px;
+    height: 900px;
+    left: 1000px;
+    top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgb(0 0 0 / 8%);
+    border-radius: 32px;
+    border-style: solid;
+    border-radius: 8%;
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-color: #f0e4d5;
+    vertical-align: auto;
+    box-sizing: border-box;
+}
+
+#resultado {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 5%;
+    padding-bottom: 10%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#muneco {
+    position: absolute;
+    margin-top: 50%;
+    padding-bottom: 10%;
+}
+
+#mensaje {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    color: #343A40;
+    margin-left: 5%;
+    padding: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+#mensaje h3 {
+    width: 336px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+#mensaje p {
+    width: 336px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'Inter';
+    margin-top: 30px;
+    font-style: normal;
+}
+
+#copiar-texto {
+    box-sizing: border-box;
+    position: absolute;
+    width: 336px;
+    height: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    margin-top: 750px;
+    margin-left: 35px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    border: 1px solid #997676;
+    border-radius: 24px;
+    cursor: pointer;
+    display: none;
+    border-top-width: 8px;
+    border-right-width: 8px;
+}
+
+#copiar-texto:hover {
+    background-color: aliceblue;
+}
+
+footer {
+    position: absolute;
+    width: 750px;
+    height: 100px;
+    top: 830px;
+}
+
+.info {
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inter';
+    font-style: normal;
+    left: 60px;
+}
+
+#exclamacion {
+    padding-right: 10px;
+}
+
+.botones {
+    display: flex;
+    gap: 24px;
+    position: absolute;
+    padding: 1.5rem 3rem;
+}
+
+.botones .boton-desencriptar:hover {
+    background-color: rgb(243, 241, 240);
+}
+
+.botones .boton-encriptar:hover {
+    background-color: rgb(52, 117, 214)
+}
+
+
+.botones .boton-encriptar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px 34px ;
+    gap: 8px;
+    background: #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    font-family: 'Inter';
+    font-style: normal;
+    height: 67px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #1d242c;
+    font-size: bold;
+    border-top-width: 8px;
+    border-right-width: 8px;
+}
+
+.botones .boton-desencriptar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    background: #D8DFE8;
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    border: 1px solid #bbbba0;
+    border-radius: 24px;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-size: bold;
+    border-top-width: 8px;
+    border-right-width: 8px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 426px) {
+    body {
+        position: relative;
+        width: 768px;
+        height: 1384px;
+    }
+
+    header {
+        width: 100px;
+    }
+
+    main {
+        width: 600px;
+        height: 400px;
+    }
+    
+    #texto-original {
+        width: 600px;
+        margin-left: 10%;
+    }
+
+    #mensaje {
+        width: 100%;
+        height: 29px;
+        top: 10px;
+        left: 40px;
+    }
+
+    aside {
+        position: relative;
+        width: 530px;
+        height: 250px;
+        left: 90px;
+        top: 300px;
+    }
+
+    #copiar-texto {
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    #muneco {
+        display: none;
+    }
+
+    #resultado {
+        position: relative;
+        bottom: 70px;
+        right: 1%;
+    }
+
+    footer {
+        width: 600px;
+        top: 600px;
+        left: 50px;
+        position: absolute;
+    }
+
+    .botones {
+        position: static;
+    }
+
+
+    .info {
+        position: relative;
+        width: 350px;
+    }
+
+    #copiar-texto {
+        position: absolute;
+        bottom: 5%;
+        right: 15%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        position: relative;
+        width: 425px;
+        height: 933px;
+    }
+    header {
+        width: 22px;
+        right: 22px;
+    }
+    main {
+        width: 350px;
+        height: 400px;
+    }
+        
+    #texto-original {
+        width: 350px;
+        margin-left: 10%;
+    }
+
+    aside {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        left: 40px;
+        top: 200px;
+    }
+
+    #mensaje {
+        width: 30%;
+        height: 29px;
+        top: 10px;
+        right: 65%;
+    }
+
+    #copiar-texto {
+        margin: 0;
+        margin-left: 5px;
+    }
+    #muneco {
+        display: none;
+    }
+    #resultado {
+        position: relative;
+        font-size: 16px;
+        bottom: 40px;
+        right: 1%;
+    }
+    footer {
+        width: 350px;
+        top: 550px;
+        position: absolute;
+        left: 20px;
+    }
+    .botones {
+        position: relative;
+        right: 1%;
+    }
+    .info {
+        position: relative;
+        width: 300px;
+    }
+    #copiar-texto {
+        position: absolute;
+        bottom: 5%;
+        left: 20%;
+        width: 200px;
+    }
+}

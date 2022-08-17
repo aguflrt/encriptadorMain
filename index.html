@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--Enlaces a las fuentes-->
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        
+        <!--Enlaces de los archivos CSS-->
+        
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Encriptador de texto By Augusto Florit</title>
+    </head>
+    <body>
+        <!--Logo-->
+        <header>
+            <div></div>
+            <img id="logo" src="img/aluralogo.png" alt="Logo de alura">
+        </header> 
+        
+        <!--Texto a escribir-->
+        <main>
+            <textarea id="texto-original" type="text" placeholder="Ingrese el texto aqui"></textarea>
+        </main>
+        
+        <!--Cuadro del resultado-->
+        <aside>
+            <p id="resultado"></p>
+            <img id="muneco" src="img/Muñeco.png" alt="Muñeco">
+            <div id="mensaje">
+                <h3>Ningún mensaje fue encontrado.</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button id="copiar-texto">Copiar texto</button>
+            </div>
+        </aside>
+        
+        <!--Botones para Encriptar o Desencriptar-->
+        <footer>
+            <span class="info">    
+                <img id="exclamacion" src="img/botoninfo.png" alt="Boton de información">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </span>
+            <div class="botones">
+                <input class="boton-encriptar" type="button" value="Encriptar">
+                <input class="boton-desencriptar" type="button" value="Desencriptar">
+            </div>
+        </footer>
+        </main>
+    </body>
+    
+    <!--Enlace del archivo JavaScript-->
+    <script src="script.js"></script>
+</html>
